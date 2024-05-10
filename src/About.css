@@ -1,0 +1,43 @@
+.about-web{
+    width: 85vw;
+    margin: 2vh auto;
+    padding: 5vh;
+    background-color: rgba(255, 255, 255, 0.507);
+    box-shadow: 0px 0px 20px gray;
+}
+
+.about-heading{
+    font-size: 8vh;
+}
+
+.about-content{
+    padding: 3vh;
+    font-size:3.5vh;
+}
+
+
+.process{
+    display: grid;
+    width: 60vw;
+    padding: 2vh;
+    margin: 20px auto;
+    grid-auto-flow: row;
+    
+}
+
+.process-item{
+    padding: 3vh;
+    margin: 5vh ;
+    border: 1px solid gray;
+    background-color: #fdfdfdcc;
+}
+
+.process-item h1{
+    border-bottom: 1px solid;
+    margin-bottom: 3vh;
+    font-weight: lighter;
+}
+
+.process-item p{
+    padding: 2.5vh;
+}
