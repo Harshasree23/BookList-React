@@ -8,7 +8,7 @@ function Details() {
 
   useEffect(() => {
     fetchBookDetails();
-  }, []);
+  }, [fetchBookDetails]);
 
   const fetchBookDetails = async () => {
     try {
