@@ -50,13 +50,13 @@
     }
 
     .book-details-heading {
-        padding: 2vh; 
+        padding: auto; 
         font-size: normal; 
     }
 
     .book-details-content,
     .error-details {
-        padding: 2vh 4vw; 
+        padding:auto; 
         font-size: 3vh; 
     }
 
@@ -65,3 +65,30 @@
         padding-right: 2vw; 
     }
 }
+
+@media screen and (max-width: 576px) { 
+    .book-details,
+    .error-details {
+      width: 90vw; 
+      height: auto;
+      padding-top: 0;
+    }
+  
+    .book-details-heading {
+        height: 100%;
+        margin: 0;
+        font-size: 1.5rem; 
+    }
+  
+    .book-details-content,
+    .error-details {
+      padding: 1.5vh 3vw; 
+      font-size: 1rem; 
+    }
+  
+    .book-details-content th {
+      padding: 0.3vh; 
+      padding-right: 1vw; 
+    }
+  }
+  

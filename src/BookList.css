@@ -144,6 +144,30 @@
   }
 }
 
+@media screen and (max-width: 576px) { 
+  .booknames, .not-found, .spinner-container {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 0.5rem; 
+  }
+
+  .book {
+    width: 120px; 
+    max-width: none;
+    height: 180px; 
+    padding: 0.3rem; 
+    font-size: 1rem; 
+    border-left-width: 0.15rem;
+    box-shadow: 0.3rem 0.3rem 0.5rem rgba(102, 102, 102, 0.671); 
+  }
+
+  .not-found {
+    font-size: 0.8rem; 
+  }
+
+  .not-found img {
+    height: 1.5rem; 
+  }
+}
 
 
 /* for loading */

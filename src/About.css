@@ -73,3 +73,37 @@
         padding: 2vh; 
     }
 }
+
+@media screen and (max-width: 576px) {
+    .about-web {
+      width: 90vw;
+      padding: 3vh;
+    }
+  
+    .about-heading {
+      font-size: 4.5vh;
+    }
+  
+    .about-content {
+      font-size: 2.5vh;
+    }
+  
+    .process {
+      grid-template-columns: 1fr;
+      width: 80vw;
+      margin:auto  -1.75rem;
+    }
+  
+    .process-item {
+      margin: 1rem auto;
+    }
+  
+    .process-item h1 {
+      margin-bottom: 1.5vh;
+    }
+  
+    .process-item p {
+      padding: 1vh;
+    }
+  }
+  
