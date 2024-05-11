@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import BookImg from './utilities/open-book.png';
-import SearchIng from './utilities/search_FILL0.png';
+
 import Error from './utilities/error.png';
 
 function BookList() {
@@ -46,10 +45,8 @@ function BookList() {
       <div className='book-list-heading'>
         <div className='book-list-title'>
           <h2>Search for the book</h2>
-          <img className='book-icon' src={BookImg} alt='a book'/>
         </div>
         <div className='book-list-search'>
-          <img className='search-icon' src={SearchIng} alt='search icon'/>
           <input
             className='input_search'
             type='text'
@@ -86,7 +83,7 @@ function BookList() {
       ) : (
         <div className='not-found'>
           <img src={Error} alt='error img' />
-          <p>No books found with the given name. Please check for typo if any...</p>
+          <p>No books found with the given name. Please try for other books</p>
         </div>
       )}
     </div>

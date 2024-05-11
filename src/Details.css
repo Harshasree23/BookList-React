@@ -1,7 +1,7 @@
-.book-details , .error-details{
+.book-details,
+.error-details {
     width: 50vw;
-    background-image: url('./utilities/shattered-Photoroom.png');
-    background-size: cover;
+    background-color: #fffde46e;
     height: auto;
     min-height: 40vh;
     margin: 10vh auto;
@@ -13,11 +13,11 @@
     font-size: 3vh;
 }
 
-.book-details-heading{
+.book-details-heading {
     width: 100%;
     padding: 3vh;
     display: flex;
-    background-color: white;
+    background-color: #f8ee6369;
     align-items: center;
     justify-content: center;
     font-size: larger;
@@ -25,18 +25,43 @@
     border-bottom: 1px solid black;
 }
 
-.book-details-content{
+.book-details-content {
     padding: 3vh;
     margin: 3vh auto;
     text-align: left;
 }
 
-.book-details-content th{
+.book-details-content th {
     padding: 1vh;
     padding-right: 3vw;
 }
 
-.error-details{
+.error-details {
     padding: 3vh 5vw;
     font-size: 4vh;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .book-details,
+    .error-details {
+        width: 80vw; 
+        font-size: 2.5vh; 
+    }
+
+    .book-details-heading {
+        padding: 2vh; 
+        font-size: normal; 
+    }
+
+    .book-details-content,
+    .error-details {
+        padding: 2vh 4vw; 
+        font-size: 3vh; 
+    }
+
+    .book-details-content th {
+        padding: 0.5vh; 
+        padding-right: 2vw; 
+    }
 }

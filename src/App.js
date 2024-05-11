@@ -4,36 +4,34 @@ import BookList from './BookList';
 import About from './About';
 import Details from './Details';
 import './App.css';
-import Logo from './utilities/search.png';
 
-function App(){
+function App() {
+  
   return (
-    <div>
-      <div className='header'>
-          <p>BookShelf Explorer</p>
-          <img src={Logo} alt='Logo' />
+    <Router>
+      <div>
+        <div className='header'>
+          <div className='heading'>
+            <p>BookShelf Explorer</p>
+          </div>
+              <div className='navbar'>
+                  <Link className='links' to='/'>Home</Link>
+                  <Link className='links' to='/about'>About</Link>
+               </div> 
+        </div>
+        <div className='main-container'>
+          <Routes>
+            <Route path='/' element={<BookList />}  />
+            <Route path='/about' element={<About />} />
+            <Route path='/details/:id' element={<Details />} />
+          </Routes>
+        </div>
       </div>
-      <div >
-          <Router>
-            <div className='navbar'>
-                <Link className='links' to='/'>Home</Link>
-                <Link className='links' to='/about'>About</Link>
-            </div>
-            <div className='main-container'>
-            <Routes >
-                <Route path='/' element={<BookList />} />
-                <Route path='/about' element={<About />} />
-                <Route path='/details/:id' element={<Details/>} />
-            </Routes>
-            </div>
-          </Router>
-      </div>
-      <div className='footer'>
-          <p>@contact: bookshelfexplorer@gmail.com</p>
-      </div>
-    </div>
-    
+    <footer>
+      <p>Contact Us : BookShelfexplorer@gmail.com</p>
+    </footer>
+    </Router>
   );
-};
+}
 
 export default App;
